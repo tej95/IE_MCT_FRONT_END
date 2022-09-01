@@ -1,0 +1,247 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* bree-serif-regular - latin */
+
+
+/* CSS VARAIBLES */
+:root{
+    --navbar-height: 59px;
+}
+
+/* NAVIGATION BAR */
+#navbar{
+    
+    font-family: 'Bree Serif', serif;
+    display:flex;
+    align-items: center;
+
+}
+/* Logo and image */
+#logo{
+    margin: 10px 34px;
+
+}
+#logo img{
+    border: 1px solid black;
+    padding:2px;
+    max-width: 100px;
+    height:100px;
+    margin: 3px 6px;
+}
+
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content:"";
+    background: black;
+    opacity: 0.3;
+    position:absolute;
+    height: 80%;
+    width:100%;
+    z-index: -1;
+    
+    
+}
+#navbar ul li{
+    color-style:white;
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    font-family: 'Bree Serif', serif;
+    color: #373D3F;
+    display:block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#last{
+    right: 0px;
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: white ;
+}
+#navbar ul li a:active{
+    color:black;
+    background-color: white ;
+}
+
+/* Home Sectiom */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content:"";
+    background: url(home-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    top: 0;
+    left: 0;
+    position:absolute;
+    height: 1100px;
+    width:100%;
+    opacity: 0.89;
+    z-index: -1;
+}
+
+#home h1{
+    margin: 0 7%;
+    top: 16%;
+    position: absolute;
+    
+
+    color: #373D3F;
+    text-align: center;
+}
+#home box{
+    position:relative;
+    height: 70%;
+}
+#home p{
+    font-family: 'Bree Serif', serif;
+   color: rgb(60, 59, 56);
+   font-size: large;
+   display: flex;
+   
+   position:absolute;
+   margin: 0 10%;
+   top: 30%;
+   padding: 20px;
+   
+   border: 2px solid black;
+  
+   border-radius: 12px;
+   
+   background-color: rgba(255,255,255,0.3);
+}
+
+/* Utility classes */
+.h-primary{
+    
+    color:white;
+    font-size: 3.8rem;
+    padding: 12px;
+
+}
+
+.h-secondary{
+    display: flex;
+    color:white;
+    font-size: 2.0rem;
+   
+}
+
+.button{
+    position: relative;
+    
+    top:170%;
+    margin: 10%;
+    font-size: 15px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    font-size: medium;
+    
+    
+    padding:15px 4px;
+    width:150px;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+}
+.button:hover{
+   
+    background-color:whitesmoke;
+    opacity: 0.5;
+    color:black;
+    border: 2px solid grey;
+    opacity: 1;
+}
+
+.center{
+    text-align: center;
+}
+
+/* Services-Section */
+.services-container{
+    background: url(pexels-lukas-349609.jpg);
+    height: 1100px; 
+    content: "";
+    position: absolute;
+    direction: flex;
+    flex-direction: column;
+    top: 0;
+    left:0;
+    opacity: 0.7;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    z-index: -1;
+    overflow: auto;
+}
+#services-page ul li a{
+    color: white;
+    font-family:'Bree Serif', serif; 
+}
+#services{
+
+    margin:34px;
+    display:flex;
+    
+}
+.services-container h1{
+    font-family:'Bree Serif', serif;
+    margin: 0 7%;
+    top: 12%;
+    position: relative;
+    
+
+    color: white;
+    text-align: center;
+}
+#services table{
+    position: relative;
+   margin-top: 14%;
+}
+#services .box{
+    
+    
+    padding:4px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.2);
+    margin: 4px;
+    border: 2px solid black;
+    padding:12px;
+    height:40%;
+    
+}
+#services .food-icons{
+    size: 90px;
+     display:flex;
+
+}
+
+#services p{
+    color:white;
+    font-family: 'Bree Serif', serif;
+}
+
+
+
